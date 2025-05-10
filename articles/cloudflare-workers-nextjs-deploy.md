@@ -44,12 +44,13 @@ npx opennextjs-cloudflare build
 ```
 
 ### 4.`wrangler.jsonc`の編集（R2なし）
-今回はR2バケットを使用しないため、以下の通りコメントアウトします。
+アプリケーション名を設定します。
+また、今回はR2バケットを使用しないため、以下の通りコメントアウトします。
 ```json:wrangler.jsonc
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "main": ".open-next/worker.js",
-  "name": "postabit",
+  "name": "next-app", // アプリケーション名を入力
   "compatibility_date": "2025-05-10",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "assets": {
@@ -128,6 +129,8 @@ npm run preview
 ```bash
 npm run deploy
 ```
+コマンド実行後に出力されるリンクへアクセスすることで、デプロイされたアプリケーションを確認できます。
+![](/images/cloudflare-workers-nextjs-deploy/image01.png)
 
 ## トラブルシューティング
 - `.open-next/worker.js` が生成されないエラー
