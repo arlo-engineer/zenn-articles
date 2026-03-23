@@ -3,7 +3,7 @@ title: "PHPerKaigi 2026 参加レポート"
 emoji: "🐘"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["php", "phperkaigi", "カンファレンス"]
-published: false
+published: true
 ---
 
 ## はじめに
